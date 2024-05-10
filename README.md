@@ -11,5 +11,3 @@ phone, you're using an API. For more on APIs check [API - Wikipedia ](https://en
 **[JSON](https://www.w3schools.com/js/js_json_intro.asp)**: Stands for JavaScript Object Notation, a text format for storing and transporting data.
 
 **[iTunes API](https://performance-partners.apple.com/search-api)**
-
-**Pagination: GitHub API** 
