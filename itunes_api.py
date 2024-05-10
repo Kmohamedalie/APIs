@@ -20,7 +20,7 @@ import json
 base_site = "https://itunes.apple.com/search"
 
 # Make a request
-r = requests.get(base_site, params = {"term": "the beatles", "country": "us", "limit": 200})
+r = requests.get(base_site, params = {"term": "Coldplay", "country": "us", "limit": 200})
 r.status_code
 
 # Store the response
@@ -33,10 +33,10 @@ print(json.dumps(info, indent=4))
 print(json.dumps(info['results'][0], indent=4))
 
 # Find where the name is located
-info['results'][6]['trackName']
+info['results'][8]['trackName']
 
 # Find where the release date is located
-info['results'][0]['releaseDate']
+info['results'][8]['releaseDate']
 
 # Cycle through all results and print their track name
 for result in info['results']:
@@ -46,3 +46,29 @@ for result in info['results']:
 # Cycle through all results and print their release date
 for result in info['results']:
     print(result['releaseDate'])
+
+"""### **Structing the data with pandas to dataframe**:"""
+
+# import pandas
+import pandas as pd
+
+# convert results to dataframe
+ColdplaySongs = pd.DataFrame(info["results"])
+
+# print the first 10 rows of data
+ColdplaySongs.head(10)
+
+"""## **Try others 📻🎵:**
+
+1. The beatles
+
+2. Arctic Monkeys
+
+3. Imagine Dragons
+
+4. The Animals
+
+And more.....
+
+
+"""
