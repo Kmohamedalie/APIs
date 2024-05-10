@@ -10,8 +10,6 @@ phone, you're using an API. For more on APIs check [API - Wikipedia ](https://en
 
 **[JSON](https://www.w3schools.com/js/js_json_intro.asp)**: Stands for JavaScript Object Notation, a text format for storing and transporting data.
 
-**[Exchange Rates API](https://www.exchangerate-api.com/docs/free)**:  currency conversion data by API since 2010.
-
 **iTunes API**:
 
 **Pagination: GitHub API** 
